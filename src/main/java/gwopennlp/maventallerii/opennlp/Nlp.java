@@ -70,7 +70,7 @@ public class Nlp implements  Runnable{
         }
         
         
-        tokenModelIn = new FileInputStream("src\\main\\java\\en-token.bin");
+        tokenModelIn = new FileInputStream("src/main/java/en-token.bin");
         TokenizerModel tokenModel = new TokenizerModel(tokenModelIn);
         Tokenizer tokenizer = new TokenizerME(tokenModel);
         String tokens[] = tokenizer.tokenize(rx);
@@ -80,7 +80,7 @@ public class Nlp implements  Runnable{
         }
         
      
-        posModelIn = new FileInputStream("src\\main\\java\\en-pos-maxent.bin");
+        posModelIn = new FileInputStream("src/main/java/en-pos-maxent.bin");
         POSModel posModel = new POSModel(posModelIn);
         POSTaggerME posTagger = new POSTaggerME(posModel);
         String tags[] = posTagger.tag(tokens);

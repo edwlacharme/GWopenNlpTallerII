@@ -20,7 +20,7 @@ public class Load {
     
     
     public List<String> leerCsv(){
-        String rutaCsv = "src\\main\\java\\prueba.csv";
+        String rutaCsv = "src/main/java/prueba.csv";
         BufferedReader br = null;
         String line = "";
         List<String> sentenceList = new ArrayList<>();
